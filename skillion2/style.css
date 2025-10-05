@@ -1,0 +1,35 @@
+:root{
+  --bg:#0f172a;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#0ea5a3;
+  --danger:#ef4444;
+  --glass: rgba(255,255,255,0.06);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background: linear-gradient(180deg,#0b1220 0%, #071126 100%);
+  color:#e6eef7;
+  min-height:100vh;
+}
+.navbar-brand { color: #fff !important; font-weight:600; }
+.container { max-width:1100px; }
+.app-card { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border-radius:12px; padding:18px; color: #e6eef7; box-shadow: 0 8px 30px rgba(2,6,23,0.6); }
+.header-row { display:flex; gap:12px; align-items:center; margin-bottom:12px; }
+.kpi { background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); padding:12px; border-radius:10px; min-width:120px; text-align:center; }
+.ticket-card { background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:10px; padding:12px; transition: transform .15s ease, box-shadow .15s ease; border-left:4px solid transparent; }
+.ticket-card:hover{ transform: translateY(-4px); box-shadow: 0 10px 30px rgba(2,6,23,0.6); }
+.ticket-card.breached{ border-left-color: var(--danger); }
+.small-muted{ color: #a8b3c7; font-size:13px; }
+.pill { display:inline-block; padding:4px 8px; border-radius:999px; font-size:12px; background: rgba(255,255,255,0.04); color:#dbeafe; }
+.search-input{ background: rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.03); color: #e6eef7; }
+.form-control, .form-select { background: rgba(255,255,255,0.03); color:#e6eef7; border:1px solid rgba(255,255,255,0.04); }
+.footer-note{ color:#9fb3c8; font-size:13px; margin-top:18px; text-align:center; }
+.comment{ background: rgba(255,255,255,0.02); padding:10px; border-radius:8px; margin-bottom:8px; }
+.timeline{ background: rgba(255,255,255,0.02); padding:10px; border-radius:8px; }
+.badge-breach{ background: rgba(239,68,68,0.14); color: var(--danger); padding:5px 6px; border-radius:6px; font-weight:600; }
+.btn-accent{ background: linear-gradient(90deg, #06b6d4, #0ea5a3); color:#04263a; font-weight:600; border:0; }
+.modal-backdrop.show { opacity: .6; }
+@media (max-width:900px){ .header-row{ flex-direction:column; align-items:stretch } }
